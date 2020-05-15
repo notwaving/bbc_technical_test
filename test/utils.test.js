@@ -1,0 +1,1 @@
+const utils = require('../app/word_reversal');

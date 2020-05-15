@@ -9,3 +9,7 @@
 // Split this reversed stting by spaces, so we can isolate each word in an array, reverse each word and join() to return the result as a string to the user
 
 // Call the function.
+
+module.exports = {
+  wordReversal
+}
