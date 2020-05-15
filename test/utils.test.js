@@ -5,5 +5,4 @@ const utils = require('../app/word_reversal');
       expect(utils.wordReversal("friend")).toBe("dneirf");
       expect(utils.wordReversal("british broadcasting corporation")).toBe("hsitirb gnitsacdaorb noitaroproc");
     });
-  
   });
