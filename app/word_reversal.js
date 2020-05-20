@@ -4,12 +4,20 @@
 
 // Strings are immutable so all changes need to be made into an array first.
 // We split every character and put in an array so they are treated as separate array items. Calling reverse() reverses the order of the words too, and join() converts the array to a string. If we repeat this process but this time split and join with *spaces*, we can revert to the original word order as required.
-
 function wordReversal(string) {
   return string.split("").reverse().join("").split(" ").reverse().join(" ");
-};
+}
+function lengthCheck (string) {
+  if (string.length <= 12) {
+    return wordReversal(string);
+  } else {
+      let newString = string.slice(0, 12);
+      let result = wordReversal(newString);
+      return result + "...";
+    };
+};  
 
-console.log(wordReversal("british broadcasting corporation"));
+console.log(lengthCheck("here is a phrase with more than 12"));
 
 module.exports = {
   wordReversal
